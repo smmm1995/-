@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播插件</title>
+    <script src="jquery%20.js"></script>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .slide-t{
+        width: 400px;
+        margin: 50px auto;
+        height:100px;
+    }
+    section{
+
+        float: left;
+        height: 100px;
+        width: 50px;
+        background-color: gray;
+        padding:20px 17px  ;
+    }
+    .fa{
+        font-size: 36px;
+    }
+    .slide-p{
+        width: 300px;
+        margin: 0 auto;
+        border: 1px solid black;
+        height: 100px;
+        overflow: hidden;
+        float: left;
+    }
+    ul{
+        display: block;
+        width: 500px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        height: 100px;
+        /*right:100px*/
+    }
+    li{
+        float: left;
+        font-size:0;
+    }
+    img{
+        height: 100px;
+        width:100px;
+    }
+</style>
+<body>
+<div class="slide-t">
+<section><span class="fa fa-caret-left"></span></section>
+<div class="slide-p">
+
+    <ul>
+        <li><img src="1.jpg" alt=""></li>
+        <li><img src="2.jpg" alt=""></li>
+        <li><img src="3.png" alt=""></li>
+        <li><img src="4.jpg" alt=""></li>
+        <li><img src="5.jpg" alt=""></li>
+    </ul>
+
+</div>
+<section><span class="fa fa-caret-right"></span></section>
+    </div>
+<script src="chajian.js"></script>
+<script>
+    $(function(){
+
+       $('.slide-t').slide({
+           direction:'right',
+       height:100,
+               width:100})
+
+
+
+        var a="12"
+        var b=1
+        var c=a + b - b
+        console.log(c)
+        console.log(typeof(c))
+    })
+</script>
+</body>
+</html>
